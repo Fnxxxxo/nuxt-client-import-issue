@@ -1,0 +1,17 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email: false
+node_js:
+  - '10'
+  - '11'
+  - '8'
+jobs:
+  include:
+    - stage: unit tests
+      script: yarn run test:prod
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/

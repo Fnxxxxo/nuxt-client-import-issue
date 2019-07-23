@@ -1,0 +1,14 @@
+{
+  "name": "demo-cms",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "http://git.lc.com/jingyuan.long/demo-cms.git",
+  "author": "Jaron Long <harkonnen@yeah.net>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
