@@ -6,6 +6,9 @@
   "author": "Jaron Long <harkonnen@yeah.net>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "cd packages/xcrm-demo-modules && yarn build && cd ../xcrm-demo-server && yarn dev"
+  },
   "workspaces": {
     "packages": [
       "packages/*"
