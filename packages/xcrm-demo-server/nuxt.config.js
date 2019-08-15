@@ -42,6 +42,7 @@ export default {
       if (process.env.NODE_ENV === 'debug') {
         config.devtools = ctx.isClient ? 'eval-source-map' : 'inline-source-map'
       }
+      config.resolve.symlinks = false
     }
   }
 }
